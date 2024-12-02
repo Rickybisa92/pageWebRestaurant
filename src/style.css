@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: rgb(112, 112, 112);
+    width: 75%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 20px
+}
+
+.nav-link {
+    color: aliceblue;
+    font-size:medium;
+    font-weight: 500;
+}
+
