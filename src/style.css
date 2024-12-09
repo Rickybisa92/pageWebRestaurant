@@ -2,29 +2,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pacifico&display=swap');
 
 
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegurar que padding y bordes se calculen dentro del ancho/alto */
+}
+
+/* Asegurar que el fondo y el contenido ocupen toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0; /* Elimina el margen predeterminado */
+    overflow:auto;
+
+}
+
+main {
+    margin-top: -100px;
+}
+
+
+/* Specific Section Styles */
+#home {
+    height: 100vh; 
+    width: 100%; 
+    background: url('img/cartelSolo_LE_upscale_balanced_x4.jpeg') no-repeat center center; 
+    background-size: cover; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding-top: 60px; 
+}
+
+#about {
+    background-color: burlywood;
+}
+
+#menu {
+    background-color: brown;
+    color: white;
+}
+
+#contact {
+    background-color: chocolate;
+    color: white;
+}
+
+/* General Section Styles */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
     margin: 0;
     padding: 0;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(./img/cartelSolo_LE_upscale_balanced_x4.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 nav {
     background-color: rgba(188, 123, 50, 0.478);
+    backdrop-filter: blur(3px);
     width: 75%;
-    height: 100px; 
-    margin-top: 30px;
+    height: 100px;
+    margin: 0px auto; /* Asegura que el navbar esté centrado */
     border-radius: 20px;
-    padding: 100px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
+
+nav.navbar {
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+
+
+
 
 .logo {
     color: aliceblue;
@@ -44,62 +102,15 @@ nav {
 }
 
 .nav-item {
-    padding: 20px;
+    padding: 10px;
 }
 
 .nav-link {
     color: rgb(255, 255, 255);
-    font-size:medium;
+    font-size:17px;
     font-weight: 500;
 }
 
 .nav-link:hover {
     color: rgb(34, 34, 34);
 }
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10%;
-}
-
-.glass-card {
-    background: rgba(188, 123, 50, 0.478); /* Fondo semitransparente */
-    border-radius: 15px;
-    padding: 20px 40px;
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
-    text-align: center;
-    color: #fff; /* Texto blanco */
-    max-width: 400px;
-}
-
-.glass-card h1 {
-    margin: 0 0 10px;
-    font-size: 24px;
-}
-
-.glass-card p {
-    font-family: "Dancing Script", cursive;
-    margin: 0 0 20px;
-    font-size: 50px;
-    line-height: 1.5;
-}
-
-.glass-card button {
-    background: rgba(0, 0, 0, 0.4);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 9px;
-    color: #000000;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.glass-card button:hover {
-    background: rgba(255, 255, 255, 0.6);
-}
-
