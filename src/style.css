@@ -75,7 +75,6 @@ nav {
 }
 
 nav.navbar {
-    position: sticky;
     top: 10px;
     z-index: 100;
 }
