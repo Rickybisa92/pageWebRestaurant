@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="menu.css">
     <title>Document</title>
 </head>
 
@@ -40,7 +41,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="reservation btn btn-outline-dark" href="#" role="button">Reservation <i
+                        <a class="reservation btn btn-outline-dark" href="#contact" role="button">Reservation <i
                                 class="fa-regular fa-hand-pointer"></i></a>
                     </li>
                 </ul>
@@ -56,7 +57,7 @@
                 <h1>Welcome</h1>
                 <p>Solo Cafe</p>
                 <a href="#about" class="button1">Our Story</a>
-                <a href="#seccion-destino" class="button2">Check Menu</a>
+                <a href="#menu" class="button2">Check Menu</a>
             </div>
         </section>
 
@@ -91,8 +92,59 @@
         </section>
 
         <section id="menu">
+            <div class="tituloMenu">
             <h1>Our Menu</h1>
-            <p>Some content for the menu section...</p>
+            <p>Explore our selection of drinks, brunch, and lunch options!</p>
+        </div>
+            <!-- Carta dinámica -->
+    <div class="menu">
+        <div class="menu-tabs">
+            <button class="tab" data-section="drinks">Drinks</button>
+            <button class="tab" data-section="brunch">Brunch</button>
+            <button class="tab" data-section="lunch">Lunch</button>
+        </div>
+        <div class="menu-content">
+            <!-- Drinks Section -->
+            <div id="drinks" class="menu-section hidden">
+                <div class="item">
+                    <img src="./img/2024-04-18.jpg" alt="Drink 1">
+                    <h3>Mojito</h3>
+                    <p>Precio: 5€</p>
+                    <p>Ingredientes: Ron, menta, azúcar, soda.</p>
+                    <p>Alergias: Ninguna</p>
+                </div>
+                <div class="item">
+                    <img src="drink2.jpg" alt="Drink 2">
+                    <h3>Limonada</h3>
+                    <p>Precio: 3€</p>
+                    <p>Ingredientes: Limón, agua, azúcar.</p>
+                    <p>Alergias: Ninguna</p>
+                </div>
+            </div>
+
+            <!-- Brunch Section -->
+            <div id="brunch" class="menu-section hidden">
+                <div class="item">
+                    <img src="brunch1.jpg" alt="Brunch 1">
+                    <h3>Panqueques</h3>
+                    <p>Precio: 7€</p>
+                    <p>Ingredientes: Harina, leche, huevos, miel.</p>
+                    <p>Alergias: Gluten, lácteos.</p>
+                </div>
+            </div>
+
+            <!-- Lunch Section -->
+            <div id="lunch" class="menu-section hidden">
+                <div class="item">
+                    <img src="lunch1.jpg" alt="Lunch 1">
+                    <h3>Ensalada César</h3>
+                    <p>Precio: 10€</p>
+                    <p>Ingredientes: Lechuga, pollo, parmesano, crutones.</p>
+                    <p>Alergias: Gluten, lácteos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
         </section>
 
         <section id="contact">
@@ -101,6 +153,7 @@
         </section>
     </main>
 
+    <script src="/menuJS.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

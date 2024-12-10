@@ -29,8 +29,7 @@ main {
     background-size: cover; 
     display: flex; 
     justify-content: center;
-    align-items: center; 
-    padding-top: 60px; 
+    align-items: center;  
 }
 
 #about {
@@ -38,8 +37,11 @@ main {
 }
 
 #menu {
-    background-color: brown;
+    background-color: rgb(181, 126, 71);
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 #contact {
@@ -79,10 +81,6 @@ nav.navbar {
     z-index: 100;
 }
 
-
-
-
-
 .logo {
     color: aliceblue;
     padding: 5px;
@@ -107,9 +105,13 @@ nav.navbar {
 .nav-link {
     color: rgb(255, 255, 255);
     font-size:17px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .nav-link:hover {
     color: rgb(34, 34, 34);
+}
+
+.reservation {
+    font-weight: 700;
 }
