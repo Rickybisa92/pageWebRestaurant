@@ -2,21 +2,23 @@
 
 
 
-/* Ocultar desplazamiento del cuerpo */
-body {
+ /* Ocultar desplazamiento */
+ body {
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow: hidden; /* Evita el desplazamiento */
+    overflow: hidden;
     position: relative;
     height: 100vh;
     width: 100vw;
 }
 
-nav {
+/* Estilos del header */
+header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    background-color: #a47f4392;
 }
 
 /* Ocultar todas las secciones por defecto */
@@ -36,17 +38,25 @@ section {
 
 /* Colores de ejemplo */
 #home {
-    background-color:rgb(160, 188, 149);
+    background: url(./src/img/Captura_de_pantalla_2024-12-12_223047-transformed.png);
     background-repeat: no-repeat;
     background-size:cover;
 }
 
 #about {
-    background-color: #2ecc71;
+    background-color: burlywood;
+}
+
+#pricing {
+    background-color: #e74c3c;
+}
+
+#faqs {
+    background-color: #f1c40f;
 }
 
 #contact {
-    background-color: #e74c3c;
+    background-color: #9b59b6;
 }
 
 /* Mostrar la sección activa */
@@ -59,53 +69,59 @@ body:not(:has(:target)) #home {
     display: flex;
 }
 
-nav {
-    background-color: #589170;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-/* Estilos de los enlaces */
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 .logo {
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     padding: 5px;
     font-family: "Dancing Script", cursive;
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 900;
+    font-size: 30px;
     margin: 0;
 }
 
-.logo:hover {
-    color: rgb(255, 255, 255);
-}
-
 .img-logo {
-    width: 55px;
+    width: 80px;
 }
 
+/* Estilos de enlaces */
 .nav-link {
-    color: rgb(255, 255, 255);
-    font-size:17px;
-    font-weight: 700;
+    font-weight: bold;
+    color: #fdfdfd;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: rgb(34, 34, 34);
+    color: #000000;
+}
+
+.nav-link.active {
+    color: #fff;
+    background-color: #007bff;
 }
 
 .containerHome {
     display: flex;
     flex-direction: column;
+    background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
+    border-radius: 15px;
+    padding: 20px 40px;
+    backdrop-filter: blur(3px); /* Efecto de desenfoque */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
+    text-align: center;
+    color: #fff; /* Texto blanco */
+    max-width: 400px;
+}
+
+.glass-card {
+    background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
+    border-radius: 15px;
+    padding: 20px 40px;
+    backdrop-filter: blur(3px); /* Efecto de desenfoque */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
+    text-align: center;
+    color: #fff; /* Texto blanco */
+    max-width: 400px;
 }
 
 .container-logo {
@@ -127,11 +143,11 @@ nav a:hover {
 
 .button1 {
     display: inline-block;
-    background: rgba(69, 69, 69, 0.662);
+    background: rgba(21, 21, 21, 0.919);
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
-    color: #d9d9d9;
+    color: #ffffff;
     font-weight: bold;
     text-decoration: none; /* Quita el subrayado de enlaces */
     text-align: center;
@@ -140,16 +156,16 @@ nav a:hover {
 }
 
 .button1:hover {
-    background: rgba(96, 96, 96, 0.6);
+    background: rgb(85, 85, 85);
 }
 
 .button2 {
     display: inline-block;
-    background: rgba(40, 151, 68, 0.662);
+    background: rgba(195, 145, 28, 0.91);
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
-    color: #d9d9d9;
+    color: #ffffff;
     font-weight: bold;
     text-decoration: none; /* Quita el subrayado de enlaces */
     text-align: center;
@@ -158,7 +174,7 @@ nav a:hover {
 }
 
 .button2:hover {
-    background: rgba(74, 193, 113, 0.678);
+    background: rgba(235, 215, 35, 0.826);
 }
 
 /* Sección destino */
@@ -174,3 +190,249 @@ nav a:hover {
 .containerButtons a {
     margin: 10px;
 }
+
+.imagen {
+    position: relative;
+    width: 25%;
+    height: 80%; /* Ajusta según sea necesario */
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(246, 7, 7, 0) 50%, rgba(255, 157, 46, 0.7) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10%;
+    
+}
+
+.about-text {
+    font-size: 1.3em;
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 140%;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.containerAbout {
+    width: 50%;
+    padding: 0px 0px 0px 90px;
+ }
+
+ .textAbout {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ 
+ .texto1 {
+     color: black;
+     font-size: 1.9em;
+     font-weight: 900;
+     font-family:"Dancing Script", cursive;
+     margin-bottom: 0px;
+ }
+ 
+ .texto2 {
+     font-weight: bold;
+     color: white;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-weight: 900;
+     font-size: 1.2em;
+ }
+
+ @media (max-width: 767px) {
+
+    #home {
+        background: url(./src/img/Captura_de_pantalla_2024-12-12_223047-transformed.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    
+    #about {
+        background-color: burlywood;
+    }
+    
+    #pricing {
+        background-color: #e74c3c;
+    }
+    
+    #faqs {
+        background-color: #f1c40f;
+    }
+    
+    #contact {
+        background-color: #9b59b6;
+    }
+
+
+
+
+    .containerHome {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
+        border-radius: 15px;
+        padding: 20px 40px;
+        backdrop-filter: blur(3px); /* Efecto de desenfoque */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
+        text-align: center;
+        color: #fff; /* Texto blanco */
+        max-width: 350px;
+        margin-top: 90px;
+    }
+
+    .logoHome {
+        width: 200px;
+    }
+    
+    .glass-card {
+        background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
+        border-radius: 15px;
+        padding: 20px 40px;
+        backdrop-filter: blur(3px); /* Efecto de desenfoque */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
+        text-align: center;
+        color: #fff; /* Texto blanco */
+        
+    
+    }
+    
+    .container-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .fontWelcome {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 40px;
+    }
+    
+    /* Botón estilizado como un botón tradicional */
+    
+    .containerButtons {
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+    .button1 {
+        display: inline-block;
+        background: rgba(21, 21, 21, 0.919);
+        border: none;
+        padding: 5px 40px;
+        border-radius: 20px;
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none; /* Quita el subrayado de enlaces */
+        text-align: center;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-size: 20px;
+    }
+    
+    .button1:hover {
+        background: rgb(85, 85, 85);
+    }
+    
+    .button2 {
+        display: inline-block;
+        background: rgba(195, 145, 28, 0.91);
+        border: none;
+        padding: 5px 40px;
+        border-radius: 20px;
+        color: #ffffff;
+        font-weight: bold;
+        text-decoration: none; /* Quita el subrayado de enlaces */
+        text-align: center;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        font-size: 20px;
+    }
+    
+    .button2:hover {
+        background: rgba(235, 215, 35, 0.826);
+    }
+    
+    /* Sección destino */
+    #seccion-destino {
+        padding: 50px;
+        background: #f4f4f4;
+        color: #333;
+        text-align: center;
+        margin-top: 50px;
+        border-radius: 15px;
+    }
+    
+    .containerButtons a {
+        margin: 10px;
+    }
+
+
+   
+
+    .imagen {
+        width:80%;
+        height: 50%; /* Ajusta según sea necesario */
+    }
+    
+    .imagen img {
+        object-fit: cover;
+        border-radius: 10%;
+    
+    }
+
+    .about-text {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.1em;
+    }
+    
+    
+    .containerAbout {
+        
+     }
+    
+     .textAbout {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     }
+     
+     .texto1 {
+         color: black;
+         font-size: 1.9em;
+         font-weight: 900;
+         font-family:"Dancing Script", cursive;
+         margin-bottom: 0px;
+     }
+     
+     .texto2 {
+        
+         color: white;
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+     }
+
+
+  }
+  

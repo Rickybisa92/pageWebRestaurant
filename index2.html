@@ -10,29 +10,21 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Eighth navbar example">
-        <div class="container">
-            <img class="img-logo" src="/src/img/Captura_de_pantalla_2024-12-02_174008-removebg-preview.png" alt="">
+    <!-- Header -->
+    <header class="d-flex flex-wrap justify-content-around py-1 p-4">
+        <div class="d-flex align-items-center">
+            <img class="img-logo" src="./src/img/logo.png" alt="">
             <p class="logo navbar-brand" href="#">Solo Cafe</p>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <div class="navbar-collapse collapse" id="navbarsExample07" style="">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Disabled</a>
-              </li>
-            </ul>
-          </div>
         </div>
-      </nav>
+        <ul class="nav nav-pills mt-3 justify-content-center">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            <li class="nav-item"> <a class="reservation btn btn-dark" href="#contact" role="button">Reservation <i
+                class="fa-regular fa-hand-pointer"></i></a></li>
+        </ul>
+    </header>
 
 
       <!-- Secciones -->
@@ -40,7 +32,7 @@
         <div class="containerHome">
         <div class="container-logo">
             <h1 class="fontWelcome">Welcome</h1>
-            <img src="./src/img/Captura_de_pantalla_2024-12-02_174008-removebg-preview.png" alt="">
+            <img src="./src/img/logo.png" alt="" class="logoHome">
         </div>
         <div class="containerButtons">
             <a  href="#about" class="button1">Our Story</a>
@@ -51,8 +43,34 @@
 
     </section>
     <section id="about">
-        <h1>Acerca de Nosotros</h1>
-        <p>Información sobre nuestra página.</p>
+        <div class="imagen">
+            <img src="./src/img/capturaCafe.png" alt="">
+            <div class="overlay">
+                <p class="about-text">Solo café se encuentra en un rincón acogedor ubicado en el corazón de Santa Catalina.</p>
+              </div>
+        </div>
+
+        <div class="containerAbout">
+            <p class="texto1">Solo cafe</p>
+            <h1 class="textAbout">About Us</h1>
+            <p class="texto2 container">Solo Cafe is located in a cozy corner in the heart of Santa Catalina, Palma de Mallorca. In our
+                space, we are passionate about offering you a unique experience with every visit, combining the best
+                of a relaxed atmosphere with a delicious, healthy, and flavorful menu. <br> <br>
+
+                We specialize in brunch and lunch, with fresh and creative options that cater to all tastes. From
+                energy-packed dishes to start your day to lunches that will make you feel right at home, always with
+                quality ingredients and local products. Additionally, we are veggie and vegan-friendly, so you'll
+                find a wide variety of options that respect your lifestyle. <br> <br>
+
+                Our coffee is our pride. We select only the freshest beans and prepare them with care so you can
+                enjoy the perfect cup, accompanied by natural smoothies full of flavor and freshness. <br> <br>
+
+                We invite you to visit us and enjoy a place where great food and the best company come together.
+                Whether for a relaxed brunch with friends, a coffee to start your morning right, or a healthy lunch,
+                we are waiting for you with open arms!
+
+            </p>
+        </div>
     </section>
     <section id="contact">
         <h1>Contáctanos</h1>
