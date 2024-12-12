@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Pacifico&display=swap');
+
+
+
+/* Ocultar desplazamiento del cuerpo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Evita el desplazamiento */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Ocultar todas las secciones por defecto */
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Colores de ejemplo */
+#home {
+    background-color:rgb(160, 188, 149);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#about {
+    background-color: #2ecc71;
+}
+
+#contact {
+    background-color: #e74c3c;
+}
+
+/* Mostrar la sección activa */
+:target {
+    display: flex;
+}
+
+/* Mostrar home por defecto */
+body:not(:has(:target)) #home {
+    display: flex;
+}
+
+nav {
+    background-color: #589170;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Estilos de los enlaces */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    color: aliceblue;
+    padding: 5px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+}
+
+.logo:hover {
+    color: rgb(255, 255, 255);
+}
+
+.img-logo {
+    width: 55px;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-size:17px;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: rgb(34, 34, 34);
+}
+
+.containerHome {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.fontWelcome {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Botón estilizado como un botón tradicional */
+
+.containerButtons {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.button1 {
+    display: inline-block;
+    background: rgba(69, 69, 69, 0.662);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #d9d9d9;
+    font-weight: bold;
+    text-decoration: none; /* Quita el subrayado de enlaces */
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button1:hover {
+    background: rgba(96, 96, 96, 0.6);
+}
+
+.button2 {
+    display: inline-block;
+    background: rgba(40, 151, 68, 0.662);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #d9d9d9;
+    font-weight: bold;
+    text-decoration: none; /* Quita el subrayado de enlaces */
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button2:hover {
+    background: rgba(74, 193, 113, 0.678);
+}
+
+/* Sección destino */
+#seccion-destino {
+    padding: 50px;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.containerButtons a {
+    margin: 10px;
+}
