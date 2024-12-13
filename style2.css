@@ -6,7 +6,7 @@
  body {
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -18,7 +18,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #a47f4392;
+   
 }
 
 /* Ocultar todas las secciones por defecto */
@@ -38,13 +38,50 @@ section {
 
 /* Colores de ejemplo */
 #home {
-    background: url(./src/img/Captura_de_pantalla_2024-12-12_223047-transformed.png);
+    background: url(./src/img/fondoHomeSombreado.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    display: flex;
+    flex-direction: column;
 }
 
-#about {
+
+
+#menu {
+    padding: 0;
     background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+.banner {
+    position:sticky;
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* Contenedor del contenido del banner */
+.banner-content {
+    position: absolute; /* Posiciona el texto sobre la imagen */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el punto de origen del texto */
+    color: white; /* Color del texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Agrega sombra al texto para visibilidad */
+    z-index: 1; /* Asegura que el texto esté sobre la imagen */
+}
+
+/* Estilo del título */
+.menuTitle {
+    font-size: 2.5rem; /* Tamaño del texto del título */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
 #pricing {
@@ -100,81 +137,90 @@ body:not(:has(:target)) #home {
 
 .containerHome {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
-    border-radius: 15px;
-    padding: 20px 40px;
-    backdrop-filter: blur(3px); /* Efecto de desenfoque */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
-    text-align: center;
-    color: #fff; /* Texto blanco */
-    max-width: 400px;
+
 }
 
-.glass-card {
-    background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
-    border-radius: 15px;
-    padding: 20px 40px;
-    backdrop-filter: blur(3px); /* Efecto de desenfoque */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
-    text-align: center;
-    color: #fff; /* Texto blanco */
-    max-width: 400px;
+.containerLogo {
+    background: rgba(41, 116, 76, 0.504); 
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    backdrop-filter: blur(3px); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 70px;     
 }
 
-.container-logo {
-    display: flex;
-    flex-direction: column;
+.containerLogo img {
+    width: 110%;
 }
 
-.fontWelcome {
+
+.fraseHome {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:45px;
+    font-weight: 900;
 }
 
-/* Botón estilizado como un botón tradicional */
 
-.containerButtons {
+/* Nueva sección #new-dishes */
+#new-dishes {
+    padding: 60px 20px;
+    background-color: #fff; /* Fondo diferente para diferenciar */
+    text-align: center;
+}
+
+.new-dishes-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-
+    flex-wrap: wrap; /* Diseño adaptable */
+    justify-content: space-between;
+    align-items: center;
 }
 
-.button1 {
-    display: inline-block;
-    background: rgba(21, 21, 21, 0.919);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: #ffffff;
+.new-dishes-text {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.new-dishes-title {
+    font-size: 2rem;
     font-weight: bold;
-    text-decoration: none; /* Quita el subrayado de enlaces */
-    text-align: center;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    margin-bottom: 20px;
 }
 
-.button1:hover {
-    background: rgb(85, 85, 85);
+.new-dishes-description {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
 }
 
-.button2 {
-    display: inline-block;
-    background: rgba(195, 145, 28, 0.91);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none; /* Quita el subrayado de enlaces */
-    text-align: center;
-    cursor: pointer;
-    transition: background 0.3s ease;
+.new-dishes-images {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
-.button2:hover {
-    background: rgba(235, 215, 35, 0.826);
+.dish-image {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Espaciado entre secciones */
+section {
+    margin-bottom: 50px;
 }
 
 /* Sección destino */
@@ -260,7 +306,7 @@ body:not(:has(:target)) #home {
  @media (max-width: 767px) {
 
     #home {
-        background: url(./src/img/Captura_de_pantalla_2024-12-12_223047-transformed.png);
+        background: url(./src/img/fondoHomeSombreado.jpg);
         background-repeat: no-repeat;
         background-size:cover;
     }
@@ -281,99 +327,42 @@ body:not(:has(:target)) #home {
         background-color: #9b59b6;
     }
 
+    .banner {
+        position:relative;
+        width: 100%;
+        height: 40%;
+        object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
 
 
-
-    .containerHome {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
-        border-radius: 15px;
-        padding: 20px 40px;
-        backdrop-filter: blur(3px); /* Efecto de desenfoque */
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-        border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
-        text-align: center;
-        color: #fff; /* Texto blanco */
-        max-width: 350px;
-        margin-top: 90px;
+    .containerLogo {
+    background: rgba(41, 116, 76, 0.504); /* Fondo semitransparente */
+    width: 230px; /* Ancho fijo */
+    height: 230px; /* Alto igual al ancho */
+    border-radius: 50%; /* Forma circular */
+    display: flex; /* Para centrar contenido */
+    flex-direction: column;
+    align-items: center; /* Centrar contenido verticalmente */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    backdrop-filter: blur(3px); /* Efecto de desenfoque */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
+    text-align: center;
+    color: #fff; /* Texto blanco */
+    margin-top: 100px;
+    margin-bottom: 35px;
     }
 
     .logoHome {
-        width: 200px;
+        width: 250px;
     }
     
-    .glass-card {
-        background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
-        border-radius: 15px;
-        padding: 20px 40px;
-        backdrop-filter: blur(3px); /* Efecto de desenfoque */
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-        border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
-        text-align: center;
-        color: #fff; /* Texto blanco */
-        
-    
-    }
-    
-    .container-logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    .fontWelcome {
+    .fraseHome {
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 40px;
-    }
-    
-    /* Botón estilizado como un botón tradicional */
-    
-    .containerButtons {
-        display: flex;
-        flex-direction: row;
-    
-    }
-    
-    .button1 {
-        display: inline-block;
-        background: rgba(21, 21, 21, 0.919);
-        border: none;
-        padding: 5px 40px;
-        border-radius: 20px;
-        color: #ffffff;
-        font-weight: bold;
-        text-decoration: none; /* Quita el subrayado de enlaces */
-        text-align: center;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        font-size: 20px;
-    }
-    
-    .button1:hover {
-        background: rgb(85, 85, 85);
-    }
-    
-    .button2 {
-        display: inline-block;
-        background: rgba(195, 145, 28, 0.91);
-        border: none;
-        padding: 5px 40px;
-        border-radius: 20px;
-        color: #ffffff;
-        font-weight: bold;
-        text-decoration: none; /* Quita el subrayado de enlaces */
-        text-align: center;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        font-size: 20px;
-    }
-    
-    .button2:hover {
-        background: rgba(235, 215, 35, 0.826);
+        font-size:25px;
+        font-weight: 900;
     }
     
     /* Sección destino */
@@ -410,9 +399,7 @@ body:not(:has(:target)) #home {
     }
     
     
-    .containerAbout {
-        
-     }
+    
     
      .textAbout {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
