@@ -11,155 +11,47 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="menu.css">
-    <title>Document</title>
+    <title>Solo Cafe</title>
 </head>
 
-<body>
+<body class="home">
 
-
-    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Eleventh navbar example">
-        <div class="container container-fluid">
-            <img class="img-logo" src="./img/Captura_de_pantalla_2024-12-02_174008-removebg-preview.png" alt="">
-            <p class="logo navbar-brand" href="#">Solo Cafe</p>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09"
-                aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarsExample09">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#menu">Our Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="reservation btn btn-outline-dark" href="#contact" role="button">Reservation <i
-                                class="fa-regular fa-hand-pointer"></i></a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-sm py-1 p-5" aria-label="Third navbar example">
+        <div class="container-fluid  d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+            <img class="img-logo" src="./img/logo.png" alt="">
+            <p class="logoText navbar">Solo Cafe</p>
         </div>
-    </nav>
-
-
-
-    <main>
-        <section id="home">
-            <div class="glass-card">
-                <h1>Welcome</h1>
-                <p>Solo Cafe</p>
-                <a href="#about" class="button1">Our Story</a>
-                <a href="#menu" class="button2">Check Menu</a>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="imagen">
-                <img src="./img/capturaCafe.png" alt="">
-                <div class="overlay">
-                    <p class="about-text">Solo café se encuentra en un rincón acogedor ubicado en el corazón de Santa Catalina.</p>
-                  </div>
-            </div>
-            <div class="containerAbout">
-                <p class="texto1">Solo cafe</p>
-                <h1 class="textAbout">About Us</h1>
-                <p class="texto2 container">Solo Cafe is located in a cozy corner in the heart of Santa Catalina, Palma de Mallorca. In our
-                    space, we are passionate about offering you a unique experience with every visit, combining the best
-                    of a relaxed atmosphere with a delicious, healthy, and flavorful menu. <br> <br>
-
-                    We specialize in brunch and lunch, with fresh and creative options that cater to all tastes. From
-                    energy-packed dishes to start your day to lunches that will make you feel right at home, always with
-                    quality ingredients and local products. Additionally, we are veggie and vegan-friendly, so you'll
-                    find a wide variety of options that respect your lifestyle. <br> <br>
-
-                    Our coffee is our pride. We select only the freshest beans and prepare them with care so you can
-                    enjoy the perfect cup, accompanied by natural smoothies full of flavor and freshness. <br> <br>
-
-                    We invite you to visit us and enjoy a place where great food and the best company come together.
-                    Whether for a relaxed brunch with friends, a coffee to start your morning right, or a healthy lunch,
-                    we are waiting for you with open arms!
-
-                </p>
-            </div>
-        </section>
-
-        <section id="menu">
-            <div class="tituloMenu">
-            <div class="textobanner">
-            <h1>Our Menu</h1>
-            <p>Explore our selection of drinks, brunch, and lunch options!</p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample03">
+            <ul class="navbar-nav mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <a class="reservation btn btn-dark" href="#contact" role="button">Reservation <i
+                class="fa-regular fa-hand-pointer"></i></a>
+          </div>
         </div>
-        </div>
-            <!-- Carta dinámica -->
-    <div class="menu">
-        <div class="menu-tabs">
-            <button class="tab" data-section="drinks">Drinks</button>
-            <button class="tab" data-section="coffes">Coffes</button>
-            <button class="tab" data-section="superfood-lattes">Superfood Lattes</button>
-            <button class="tab" data-section="juices">Natural </button>
-            <button class="tab" data-section="healthy-bowls">Healthy Bowls</button>
-            <button class="tab" data-section="brunch">Brunch</button>
-            <button class="tab" data-section="lunch">Lunch</button>
-        </div>
-        <div class="menu-content">
-            <!-- Drinks Section -->
-            <div id="drinks" class="menu-section hidden">
-                <div class="item">
-                    <img src="./img/2024-04-18.jpg" alt="Drink 1">
-                    <h3>Mojito</h3>
-                    <p>Precio: 5€</p>
-                    <p>Ingredientes: Ron, menta, azúcar, soda.</p>
-                    <p>Alergias: Ninguna</p>
-                </div>
-                <div class="item">
-                    <img src="drink2.jpg" alt="Drink 2">
-                    <h3>Limonada</h3>
-                    <p>Precio: 3€</p>
-                    <p>Ingredientes: Limón, agua, azúcar.</p>
-                    <p>Alergias: Ninguna</p>
-                </div>
-            </div>
+      </nav>
 
-            <!-- Brunch Section -->
-            <div id="brunch" class="menu-section hidden">
-                <div class="item">
-                    <img src="brunch1.jpg" alt="Brunch 1">
-                    <h3>Panqueques</h3>
-                    <p>Precio: 7€</p>
-                    <p>Ingredientes: Harina, leche, huevos, miel.</p>
-                    <p>Alergias: Gluten, lácteos.</p>
-                </div>
+      <main>
+        <div class="containerHome">
+            <div class="containerLogo">
+                <img src="./img/logo.png" alt="" class="logoHome">
             </div>
-
-            <!-- Lunch Section -->
-            <div id="lunch" class="menu-section hidden">
-                <div class="item">
-                    <img src="lunch1.jpg" alt="Lunch 1">
-                    <h3>Ensalada César</h3>
-                    <p>Precio: 10€</p>
-                    <p>Ingredientes: Lechuga, pollo, parmesano, crutones.</p>
-                    <p>Alergias: Gluten, lácteos.</p>
-                </div>
-            </div>
-        </div>
+        <p class="fraseHome">"Brunch, café y buena vibra <br> en el corazón de Santa Catalina."</p>
     </div>
-        </section>
-
-        <section id="contact">
-            <h1>Contact Us</h1>
-            <p>Some content for the contact section...</p>
-        </section>
-    </main>
-
-    <script src="/menuJS.js"></script>
+      </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -1,77 +1,39 @@
-
-
-/* Estilos de la tarjeta de vidrio */
-.glass-card {
-    background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
-    border-radius: 15px;
-    padding: 20px 40px;
-    backdrop-filter: blur(3px); /* Efecto de desenfoque */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
-    text-align: center;
-    color: #fff; /* Texto blanco */
-    max-width: 400px;
+.home{
+    background-image: url(./img/fondoHomeSombreado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.glass-card h1 {
-    margin: 0 0 10px;
-    font-size: 24px;
+.containerHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
 
-.glass-card p {
-    font-family: "Dancing Script", cursive;
-    margin: 0 0 20px;
-    font-size: 50px;
-    line-height: 1.5;
+.containerLogo {
+    background: rgba(41, 116, 76, 0.504);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 70px;
 }
 
-/* Botón estilizado como un botón tradicional */
-.button1 {
-    display: inline-block;
-    background: rgba(69, 69, 69, 0.662);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: #d9d9d9;
-    font-weight: bold;
-    text-decoration: none; /* Quita el subrayado de enlaces */
-    text-align: center;
-    cursor: pointer;
-    transition: background 0.3s ease;
+.containerLogo img {
+    width: 110%;
 }
 
-.button1:hover {
-    background: rgba(96, 96, 96, 0.6);
-}
 
-.button2 {
-    display: inline-block;
-    background: rgba(255, 149, 2, 0.662);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    color: #d9d9d9;
-    font-weight: bold;
-    text-decoration: none; /* Quita el subrayado de enlaces */
-    text-align: center;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.button2:hover {
-    background: rgba(255, 132, 44, 0.678);
-}
-
-/* Sección destino */
-#seccion-destino {
-    padding: 50px;
-    background: #f4f4f4;
-    color: #333;
-    text-align: center;
-    margin-top: 50px;
-    border-radius: 15px;
-}
-
-a {
-    margin: 10px;
+.fraseHome {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
 }

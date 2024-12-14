@@ -1,96 +1,58 @@
-body {
+.menu {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-.tituloMenu {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding: 20px;
-    width: 50%;
-    height: 30%;
-    border: 1px solid black;
-    background-image: url("./img/menu.png");
+    background-image: url(./img/smoothie-bowl-fotor-20241213164219.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    justify-content: center;
-
+    background-size:cover;
 }
 
-.menu {
-    max-width: 800px;
-    padding-bottom: 20%;
-    
+.album {
+    background-color: burlywood;
 }
 
-.menu-tabs {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-bottom: 20px;
-   
-}
-
-.tab {
-    padding: 10px 30px;
-    cursor: pointer;
-    background-color: #e69f25dd;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    margin: 20px;
-}
-
-.tab:hover {
-    background-color: #d5aa32;
-}
-
-.menu-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.menu-section {
-    display: none;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.menu-section.active {
-    display: flex;
-}
-
-.item {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: calc(33.333% - 20px);
-    background: rgba(188, 124, 50, 0.504); /* Fondo semitransparente */
-    backdrop-filter: blur(3px); /* Efecto de desenfoque */
-    border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Línea brillante */
-    padding: 10px;
+.banner {
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.item img {
-    max-width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+.alergenos {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
 }
 
-.hidden {
-    display: none !important;
+.imgAlergenos {
+    width: 30px;
 }
 
-.textobanner {
-    margin-top: 25px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
+.listaAlergenos {
+    color: black;
+    text-shadow: none;
+    font-weight: 700;
+}
+
+.texto1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.texto2 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.tituloCarta {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     font-weight: 500;
+
 }
+

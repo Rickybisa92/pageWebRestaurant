@@ -9,81 +9,30 @@
 }
 
 /* Asegurar que el fondo y el contenido ocupen toda la pantalla */
-html, body {
+body {
     height: 100%;
 }
 
-body {
-    overflow: hidden;
-}
-
-/* Specific Section Styles */
-#home {
-    background: url('img/cartelSolo_LE_upscale_balanced_x4.jpeg') no-repeat center center; 
-    background-size: cover; 
-    display: flex; 
-    justify-content: center;
-    align-items: center;  
-}
-
-#about {
-    background-color: burlywood;
-}
-
-#menu {
-    background-color: rgb(181, 126, 71);
-    color: white;
+/* Alinea los elementos en el contenedor con Flexbox */
+.container-fluid {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-#contact {
-    background-color: chocolate;
-    color: white;
-}
-
-/* Muestra solo la sección activa */
-:target {
-    display: flex;
-}
-
-/* General Section Styles */
-section {
-    width: 100%;
-    height: 100vh;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin: 0;
-    padding: 0;
-}
-
-
-nav {
-    background-color: rgba(188, 123, 50, 0.478);
-    backdrop-filter: blur(3px);
-    width: 75%;
-    height: 100px;
-    margin: 0px auto; /* Asegura que el navbar esté centrado */
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    z-index: 1000;
-    position: fixed;
-
+    align-items: center;
 }
 
-nav.navbar {
-    top: 10px;
-    
+/* Estilo para que el menú se alinee a la derecha en pantallas grandes */
+.navbar-nav {
+    margin-left: auto; /* Esto asegura que los enlaces estén alineados a la derecha */
 }
 
-.logo {
+/* Opcional: estilos para el menú en móviles */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.logoText {
     color: aliceblue;
     padding: 5px;
     font-family: "Dancing Script", cursive;
@@ -92,26 +41,19 @@ nav.navbar {
     margin: 0;
 }
 
-.logo:hover {
-    color: rgb(255, 255, 255);
-}
-
 .img-logo {
     width: 80px;
-}
-
-.nav-item {
-    padding: 10px;
 }
 
 .nav-link {
     color: rgb(255, 255, 255);
     font-size:17px;
     font-weight: 700;
+    margin: 10px;
 }
 
 .nav-link:hover {
-    color: rgb(34, 34, 34);
+    color: rgb(118, 118, 118);
 }
 
 .reservation {
