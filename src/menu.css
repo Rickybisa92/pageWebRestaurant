@@ -5,6 +5,7 @@
     background-image: url(./img/smoothie-bowl-fotor-20241213164219.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    height: 100px;
 }
 
 .album {
@@ -55,5 +56,43 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
     font-weight: 500;
 
+}
+
+.subtituloCarta {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.logoVegan {
+    width: 25px;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(./img/smoothie-bowl-fotor-20241213164219.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 500px;
+    }
+
+    .texto1 {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        font-weight: 900;
+        font-size: 50px;
+    }
+    
+    .texto2 {
+        color: white;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
 }
 
