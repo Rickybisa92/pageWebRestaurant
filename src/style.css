@@ -59,3 +59,15 @@ body {
 .reservation {
     font-weight: 700;
 }
+
+@media (max-width: 767px) {
+    .cardLatte {
+        display: flex;
+        margin: 5px;
+    }
+
+    .latteBody {
+        display: flex;
+        flex-direction: column;
+    }
+}
