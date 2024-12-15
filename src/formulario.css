@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegurar que padding y bordes se calculen dentro del ancho/alto */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(./img/cartelSolo_LE_upscale_balanced_x4.jpeg) no-repeat center center/cover;
+  }
+
+  .contenedorlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+  }
+
+  .logo {
+    width: 50%;
+  }
+  
+  #form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo más opaco */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .button-send {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button-send:hover {
+    background-color: #45a049;
+  }
+
+  /* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    form {
+      max-width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+      margin: 10px auto; /* Asegura que quede centrado */
+      padding: 15px; /* Reduce el padding */
+    }
+  
+    input[type="submit"] {
+      font-size: 0.9rem; /* Reduce ligeramente el tamaño del texto */
+      padding: 8px; /* Reduce el padding */
+    }
+  }
+  
+  /* Ajustes adicionales para pantallas muy pequeñas */
+  @media (max-width: 480px) {
+    label {
+      font-size: 0.9rem; /* Reduce el tamaño de las etiquetas */
+    }
+  
+    input[type="text"], input[type="tel"], input[type="email"], input[type="number"] {
+      font-size: 0.9rem; /* Reduce el tamaño del texto en los inputs */
+      padding: 8px;
+    }
+  
+    input[type="submit"] {
+      font-size: 0.8rem; /* Ajuste adicional para botones */
+      padding: 8px;
+    }
+  }
+  
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="formulario.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('-7BmoRyLLxXGOqSKX')
+  </script>
+</head>
+<body>
+    
+    <main>
+        <form id="form">
+            <div class="contenedorlogo">
+            <img src="./img/logo.png" alt="" class="logo">
+        </div>
+            <div class="field">
+              <label for="name">Nombre completo:</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+          
+            <div class="field">
+              <label for="phone">Teléfono:</label>
+              <input type="tel" name="phone" id="phone" required>
+            </div>
+          
+            <div class="field">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+          
+            <div class="field">
+              <label for="people">Número de personas:</label>
+              <input type="number" name="people" id="people" min="1" required>
+            </div>
+          
+            <input class="button-send" type="submit" id="button" value="Reservar">
+          </form>
+    
+          
+          
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
