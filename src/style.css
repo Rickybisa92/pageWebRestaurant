@@ -20,16 +20,19 @@ body {
     align-items: center;
 }
 
+.navbar {
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+
 /* Estilo para que el menú se alinee a la derecha en pantallas grandes */
 .navbar-nav {
     margin-left: auto; /* Esto asegura que los enlaces estén alineados a la derecha */
 }
 
 /* Opcional: estilos para el menú en móviles */
-.navbar-collapse {
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 
 .logoText {
@@ -71,7 +74,10 @@ body {
         flex-direction: column;
     }
 
-    .navbar-collapse{
-        display:inline-block;
+    .navbar {
+        background-color: rgb(197, 168, 114);
+        padding-left:0px;
+        padding-right: 0px;
+    
     }
 }
