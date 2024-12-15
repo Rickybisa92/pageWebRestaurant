@@ -70,4 +70,8 @@ body {
         display: flex;
         flex-direction: column;
     }
+
+    .navbar-collapse{
+        display:inline-block;
+    }
 }
