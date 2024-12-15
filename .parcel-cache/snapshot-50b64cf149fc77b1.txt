@@ -80,7 +80,7 @@
 63C:\Users\Ricky\pageWebRestaurant\node_modules\timsort\README.md133773761209270344 0
 122C:\Users\Ricky\pageWebRestaurant\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-test.cmd133773761330954068 0
 84C:\Users\Ricky\pageWebRestaurant\node_modules\cosmiconfig\dist\cacheWrapper.d.ts.map133773761215222958 0
-47C:\Users\Ricky\pageWebRestaurant\src\index.html133787756271105612 0
+47C:\Users\Ricky\pageWebRestaurant\src\index.html133787772040677522 0
 97C:\Users\Ricky\pageWebRestaurant\node_modules\msgpackr-extract\node_modules\detect-libc\README.md133773761211998319 0
 91C:\Users\Ricky\pageWebRestaurant\node_modules\@parcel\watcher\src\windows\WindowsBackend.cc133773761215873855 0
 46C:\Users\Ricky\pageWebRestaurant\src\menu.html133787747356083579 0
