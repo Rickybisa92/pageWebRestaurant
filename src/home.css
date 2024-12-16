@@ -130,6 +130,7 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
   }
 
+ 
   
 
   @media (max-width: 767px) {
@@ -153,10 +154,12 @@
         padding: 40px;
         margin-top: 30px;
     }
+
     .info {
-        height: auto;
-        padding: 0%;
-    }
+      height: auto;
+      padding: 0%;
+  }
+    
 
     .bg-redes {
         padding: 10px;
@@ -197,4 +200,21 @@
         flex-direction: column;
       }
 
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1280px) {
+
+    .info {
+      height: 120vh;
+    }
+
+    .bg-food {
+      background-size:110%;
+    }
+  }
+
+  @media screen and (min-width: 1281px) and (max-width: 1920px) {
+    .info {
+      height: 140vh;
+    }
   }
