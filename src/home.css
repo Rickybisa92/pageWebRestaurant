@@ -33,6 +33,7 @@
 }
 
 
+
 .fraseHome {
     padding-top: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -137,13 +138,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .containerHome {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
         
-        }
     
     }
 
@@ -175,13 +170,13 @@
     .recuadroGrande {
         background: url(./img/fondoRecuadroGrande.png);
         background-repeat: no-repeat;
-        background-size: 180%;
+        background-size: 150%;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-weight: 700;
         font-size: 15px;
         color: white;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        padding: 5%;
+        padding: 0%;
         
     }
 
@@ -194,7 +189,7 @@
         font-size: 15px;
         color: white;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        padding: 9%;
+        padding: 5%;
       }
 
       .footerMovil {
