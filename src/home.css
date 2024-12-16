@@ -130,7 +130,9 @@
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
   }
 
- 
+ .mapa {
+  width: 90%;
+ }
   
 
   @media (max-width: 767px) {
@@ -206,6 +208,9 @@
         padding-bottom: 9%;
       }
 
+      .mapa {
+        width: auto;
+      }
   }
 
   @media screen and (min-width: 769px) and (max-width: 1280px) {
